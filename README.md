@@ -12,15 +12,16 @@ https://raw.githubusercontent.com/SIJULY/wloc/refs/heads/main/modules/wloc.modul
 - `dist/wloc.js` — 拦截 `/clls/wloc` 响应并替换坐标
 - `dist/wloc-settings.js` — 拦截选点设置请求并持久化坐标
 
-## 模块二：iOS Location Spoofer（无状态版，Shadowrocket / Surge / Egern）
+## 模块二：iOS Location Spoofer（无状态版，Shadowrocket / Surge / Egern，默认伦敦）
 
 ```
 https://raw.githubusercontent.com/SIJULY/wloc/refs/heads/main/ios-location-spoofer/ios-location-spoofer.sgmodule
 ```
 
 无状态版：坐标写入每台设备各自的本机存储，可公开共用、多人互不覆盖。
-**注意**：此版本坐标不写在模块里，需搭配选点页使用（在地图上选位置 → 储存到设备），
-未选点时默认透传真实定位。想定到伦敦的话，在选点页里选伦敦即可。
+**本仓库版本已在 argument 里写死伦敦坐标**（`enabled=true&latitude=51.5074&longitude=-0.1278&altitude=25`），
+装上即用；模块 argument 优先级高于本机存储，如需换城市直接改 argument 里的经纬度即可。
+想改其他参数（海拔、精度等）同样在 argument 那一行加，如 `&horizontalAccuracy=15`。
 
 - `ios-location-spoofer/ios-location-spoofer.sgmodule` — 模块文件
 - `ios-location-spoofer/location-spoofer.js` — 拦截响应并替换坐标
