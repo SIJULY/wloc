@@ -2,6 +2,7 @@
 # AUTHOR: SIJULY
 # REPO: https://github.com/SIJULY/wloc
 # UPDATED: 2026-10-04
+# 已实测命中的子域名: hatch.metaaivm.com, hatch-api.meta.ai
 # NOTE: meta.com 有意未收录 —— 范围太广，会把 Facebook/Instagram 的网页流量也劫持走。
 #       如需收录请自行添加: - DOMAIN-SUFFIX,meta.com
 payload:
