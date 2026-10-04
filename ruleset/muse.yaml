@@ -1,0 +1,10 @@
+# NAME: Muse (Meta AI)
+# AUTHOR: SIJULY
+# REPO: https://github.com/SIJULY/wloc
+# UPDATED: 2026-10-04
+# NOTE: meta.com 有意未收录 —— 范围太广，会把 Facebook/Instagram 的网页流量也劫持走。
+#       如需收录请自行添加: - DOMAIN-SUFFIX,meta.com
+payload:
+  - DOMAIN-SUFFIX,muse.ai
+  - DOMAIN-SUFFIX,metaaivm.com
+  - DOMAIN-SUFFIX,meta.ai
